@@ -5,21 +5,21 @@
 class Cred < Formula
   desc "A CLI tool for managing API keys via macOS Keychain"
   homepage "https://github.com/mnkd/cred"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/mnkd/cred/releases/download/v0.2.0/cred_0.2.0_darwin_amd64.tar.gz"
-    sha256 "e24ddacc770b7be31408ea7ed0957843ae6af9a642b6545789013fb48a494c38"
+    url "https://github.com/mnkd/cred/releases/download/v0.2.1/cred_0.2.1_darwin_amd64.tar.gz"
+    sha256 "cd152072e32a12e0fb22d9decfe007459969ad7f6af69079e39995c5bcaa55e8"
 
     define_method(:install) do
       bin.install "cred"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/mnkd/cred/releases/download/v0.2.0/cred_0.2.0_darwin_arm64.tar.gz"
-    sha256 "3f2f025ec8dca5953084c53c9efad5db9c0a688484a815e71235b9ae53a4040f"
+    url "https://github.com/mnkd/cred/releases/download/v0.2.1/cred_0.2.1_darwin_arm64.tar.gz"
+    sha256 "b240c2d0172cb514cb6b0fe0b9fa48269b26f27417e73454d7639f4ea70ce15a"
 
     define_method(:install) do
       bin.install "cred"
